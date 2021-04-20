@@ -1,15 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Goudy+Bookletter+1911&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
 div {
   font-family: "Caveat", cursive;
 }
 
-.menuEtFooter {
+.menuTop {
   font-size: 1.4rem;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 10px;
+  border-bottom: 1px solid;
+}
+
+.menuFooter {
+  font-size: 1.4rem;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+  border-top: 1px solid;
 }
 
 section {
@@ -41,18 +61,33 @@ a:active {
 body {
   background: url(../images/bgpeinture.jpg) no-repeat fixed center/cover;
   height: 100vh;
-  overflow: hidden; /* Retire l'ascnesseur horizontal */
+  min-height: 100%;
+  position: relative;
 }
 
 main {
-  background-color: aliceblue;
+  /*background-color: aliceblue;*/
   width: 95%;
-  min-height: 300px;
-  margin: 10px auto;
+  min-height: 100%;
+  margin: 40px 20px;
 }
 
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
+}
+
+.photoAcceuil {
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 500px;
+}
+
+.imgIndex {
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 200px;
+  height: 250px;
 }
