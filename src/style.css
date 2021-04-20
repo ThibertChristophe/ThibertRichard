@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Goudy+Bookletter+1911&display=swap");
+
+div {
+  font-family: "Caveat", cursive;
+}
+
+.menuEtFooter {
+  font-size: 1.4rem;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+section {
+  font-family: "Caveat", cursive;
+  font-size: 2rem;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* mouse over */
+a:hover {
+  color: skyblue;
+}
+
+/* selected */
+a:active {
+  color: blue;
+}
+
+body {
+  background: url(../images/bgpeinture.jpg) no-repeat fixed center/cover;
+  height: 100vh;
+  overflow: hidden; /* Retire l'ascnesseur horizontal */
+}
+
+main {
+  background-color: aliceblue;
+  width: 95%;
+  min-height: 300px;
+  margin: 10px auto;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
