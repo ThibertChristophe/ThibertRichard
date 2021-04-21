@@ -22,6 +22,7 @@ div {
   padding-left: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid;
+  border-color: white;
 }
 
 .menuFooter {
@@ -30,6 +31,7 @@ div {
   padding-left: 10px;
   padding-bottom: 15px;
   border-top: 1px solid;
+  border-color: white;
 }
 
 section {
@@ -50,7 +52,7 @@ a {
 
 /* mouse over */
 a:hover {
-  color: skyblue;
+  color: black;
 }
 
 /* selected */
@@ -88,6 +90,26 @@ footer {
 .imgIndex {
   margin-right: 20px;
   margin-left: 20px;
+  margin-bottom: 40px;
   width: 200px;
   height: 250px;
+}
+
+.portrait img {
+  width: 300px;
+  margin-left: 10px;
+}
+
+.portrait {
+  float: right;
+}
+
+input,
+label {
+  display: block;
+}
+
+#message {
+  width: 50%;
+  height: 200px;
 }
