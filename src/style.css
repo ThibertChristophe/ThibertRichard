@@ -25,6 +25,9 @@ div {
   border-color: white;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .menuFooter {
@@ -69,8 +72,8 @@ body {
 main {
   /*background-color: aliceblue;*/
   width: 95%;
-  min-height: 100%;
-  margin: 40px 20px;
+  min-height: 95%;
+  margin: 70px 20px;
 }
 
 footer {
@@ -156,6 +159,11 @@ textarea {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
+}
+
+.buttonForm:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
 }
 
 #message {
