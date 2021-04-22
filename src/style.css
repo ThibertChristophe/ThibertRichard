@@ -25,6 +25,9 @@ div {
   border-color: white;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .menuFooter {
@@ -64,6 +67,7 @@ body {
   height: 100vh;
   min-height: 100%;
   position: relative;
+  margin-top: 75px;
 }
 
 main {
@@ -156,6 +160,11 @@ textarea {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
+}
+
+.buttonForm:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
 #message {
