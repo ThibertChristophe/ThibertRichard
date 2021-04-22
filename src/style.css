@@ -8,10 +8,6 @@
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-}
-
 div {
   font-family: "Caveat", cursive;
 }
@@ -74,7 +70,7 @@ main {
   /*background-color: aliceblue;*/
   width: 95%;
   min-height: 100%;
-  margin: 40px 20px;
+  margin: 40px 80px;
 }
 
 footer {
@@ -84,16 +80,17 @@ footer {
 }
 
 /* INDEX */
-.photoAcceuil {
+.photoAcceuil,
+.listeTableau {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 50px;
 }
 
-.photoAcceuil img {
-  margin-right: 20px;
-  margin-left: 20px;
+.photoAcceuil img,
+.listeTableau img {
+  margin-right: 40px;
   margin-bottom: 40px;
   width: 400px;
   height: 400px;
@@ -101,29 +98,30 @@ footer {
   box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.6);
 }
 
-.photoAcceuil img:hover {
+.photoAcceuil img:hover,
+.listeTableau img:hover {
   transform: scale(1.05);
   transition: 0.8s ease;
 }
 
-/* TABLEAUX */
-.listTableau {
-  margin-top: 25px;
-  padding: 5px;
-  background-color: aliceblue;
-  border: 2px solid black;
+/* A PROPOS */
+.aPropos {
+  display: flex;
+  justify-content: center;
 }
 
-/* A PROPOS */
-.portrait img {
+.aPropos img {
   width: 500px;
   margin-left: 10px;
+  margin-right: 80px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
 }
 
-.portrait {
-  float: right;
+.presentation {
+  background-color: rgba(255, 255, 255, 0.575);
+  border-radius: 10px;
+  padding: 5px;
 }
 
 /* CONTACT */
