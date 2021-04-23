@@ -204,3 +204,51 @@ textarea {
 .contact p {
   margin-bottom: 10px;
 }
+
+@media all and (max-width: 1200px) {
+  .aPropos img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .presentation {
+    width: 400px;
+  }
+
+  main {
+    min-height: 100%;
+    margin: 30px 60px;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .photoAcceuil img,
+  .listeTableau img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .presentation p {
+    font-size: 15px;
+    margin-right: 20px;
+  }
+
+  .aPropos img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 10px;
+  }
+
+  .aPropos {
+    display: inline;
+  }
+
+  main {
+    /*background-color: aliceblue;*/
+    min-height: 100%;
+    margin: 20px 40px;
+  }
+}
