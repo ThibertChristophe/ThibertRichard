@@ -36,15 +36,17 @@
     <main>
       <section>
         <h1>Contact</h1>
-        <div class="contact">
-          Vous pouvez prendre contact avec moi au (+32)472/21.22.35
-          <p>
-            Ou par email à
-            <a href="mailto:artistethibert@skynet.be">
-              artistethibert@skynet.be
-            </a>
-          </p>
-        </div>
+        <form action="post">
+          <label for="fname">Nom :</label>
+          <input type="text" id="fname" name="fname" />
+          <label for="lname">Prénom :</label>
+          <input type="text" id="lname" name="lname" />
+          <label for="email">Email :</label>
+          <input type="text" id="email" name="email" />
+          <label for="message">Message :</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <input type="button" value="Envoyer" id="buttonForm" />
+        </form>
       </section>
     </main>
 

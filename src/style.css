@@ -117,12 +117,14 @@ footer {
   margin-right: 80px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
+  margin-top: 10px;
 }
 
 .presentation {
   background-color: rgba(255, 255, 255, 0.575);
   border-radius: 10px;
-  padding: 5px;
+  padding: 15px;
+  margin-top: 10px;
 }
 
 /* CONTACT */
@@ -169,4 +171,19 @@ textarea {
 #message {
   width: 50%;
   height: 200px;
+}
+
+.contact {
+  background-color: rgba(255, 255, 255, 0.575);
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.contact a {
+  color: black;
+}
+
+.contact a:hover {
+  color: white;
 }
