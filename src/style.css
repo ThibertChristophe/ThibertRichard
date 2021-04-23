@@ -91,7 +91,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
 .photoAcceuil img,
@@ -122,6 +122,8 @@ footer {
 .aPropos {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 
 .aPropos img {
@@ -215,10 +217,7 @@ textarea {
   .aPropos img {
     width: 300px;
     height: 300px;
-  }
-
-  .presentation {
-    width: 400px;
+    margin-top: 10px;
   }
 
   main {
@@ -260,21 +259,13 @@ textarea {
 
   .presentation {
     width: 100%;
+    margin-right: 0;
   }
 
   .aPropos img {
     width: 200px;
     height: 200px;
     margin-top: 10px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-  }
-
-  .aPropos {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
   }
 
   .contact {
