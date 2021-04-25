@@ -214,19 +214,23 @@ textarea {
 
 /******************************************** EXPO **********************************/
 
-.coordonneeExpo p {
+.coordonneeExpo {
   background-color: rgba(255, 255, 255, 0.575);
   border-radius: 10px;
   padding: 15px;
   margin-bottom: 20px;
   margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.photoExpo img {
+.coordonneeExpo img {
   float: right;
   width: auto;
   height: 150px;
   border-radius: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 /******************************************** MEDIA QUERIES **********************************/
 /******************************************** 1200 **********************************/
