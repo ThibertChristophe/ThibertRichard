@@ -324,3 +324,48 @@ textarea {
     height: 200px;
   }
 }
+
+/******************************************** ZOOM *****************************************/
+
+#zoom {
+  position: fixed;
+  left: 2.5%;
+  top: 8%;
+  visibility: hidden;
+  width: 95%;
+  height: 85%;
+  background-color: rgba(255, 254, 254, 0.8);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#zoom img {
+  position: absolute;
+  height: 90%;
+  width: auto;
+  margin: 40px 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#zoom p {
+  margin-top: 5px;
+  font-size: 25px;
+}
+
+/* .close {
+  width: 40px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+} */
+
+/* .close:nth-child(1) {
+  transform: rotate(45deg);
+}
+.close:nth-child(2) {
+  transform: rotate(-45deg);
+}
+ */
