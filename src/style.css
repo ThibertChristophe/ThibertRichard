@@ -8,6 +8,7 @@
   padding: 0;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: "Caveat", cursive;
 }
 
 section {
@@ -42,11 +43,6 @@ body {
 main {
   min-height: 100%;
   margin: 40px 80px;
-}
-
-/* Police */
-div {
-  font-family: "Caveat", cursive;
 }
 
 h1 {
