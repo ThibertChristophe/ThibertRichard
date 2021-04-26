@@ -9,6 +9,7 @@ const grandeIMG = document.getElementById('imgZoom');
 /* On ren visible la zone de zoom avec la photo concernée */
 image.forEach((elem) => {
     elem.addEventListener('click', (e) => {
+        /* Recup l'image source */
         grandeIMG.src = e.target.currentSrc;
         zoom.style.visibility = "visible";
     });
@@ -17,4 +18,4 @@ image.forEach((elem) => {
 /* Click sur la zone de zoom */
 zoom.addEventListener('click', () => {
     zoom.style.visibility = "hidden";
-})
+});
