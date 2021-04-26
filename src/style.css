@@ -14,6 +14,9 @@ div {
   font-family: "Caveat", cursive;
 }
 
+h1 {
+  margin-bottom: 10px;
+}
 /********************************************** MENU *************************************/
 .menuTop {
   font-size: 1.6rem;
@@ -115,7 +118,6 @@ footer {
   background-color: rgba(255, 255, 255, 0.575);
   border-radius: 10px;
   padding: 15px;
-  margin-top: 10px;
 }
 
 /*************************************** A PROPOS ***************************************/
@@ -131,13 +133,15 @@ footer {
   margin-left: 10px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .presentation {
   background-color: rgba(255, 255, 255, 0.575);
   border-radius: 10px;
   padding: 15px;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /************************************** CONTACT *******************************************/
@@ -191,7 +195,6 @@ textarea {
   border-radius: 10px;
   padding: 15px;
   text-align: center;
-  margin-top: 10px;
 }
 
 .contact a {
@@ -219,7 +222,6 @@ textarea {
   border-radius: 10px;
   padding: 15px;
   margin-bottom: 20px;
-  margin-top: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -232,13 +234,22 @@ textarea {
   margin-top: auto;
   margin-bottom: auto;
 }
+
+.lienExpo {
+  color: black;
+  text-decoration: underline;
+}
+
+.lienExpo:hover {
+  color: white;
+}
+
 /******************************************** MEDIA QUERIES **********************************/
 /******************************************** 1200 **********************************/
 @media all and (max-width: 1200px) {
   .aPropos img {
     width: 300px;
     height: 300px;
-    margin-top: 10px;
   }
 
   main {
@@ -247,6 +258,19 @@ textarea {
   }
 }
 
+/******************************************** MEDIA QUERIES **********************************/
+/******************************************** 860 **********************************/
+@media all and (max-width: 860px) {
+  .coordonneeExpo {
+    flex-wrap: wrap;
+  }
+
+  .coordonneeExpo img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+}
 /******************************************** MEDIA QUERIES **********************************/
 /******************************************** 550 **********************************/
 @media all and (max-width: 550px) {
