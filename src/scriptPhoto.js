@@ -1,3 +1,5 @@
+/* Script pour faire le zoom des photos de la page Exposition (expo.html) */
+
 /* Liste des images de la page */
 const image = document.querySelectorAll('div.listeTableau > img');
 /* La div de zoom d'image */
