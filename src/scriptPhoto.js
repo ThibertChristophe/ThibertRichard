@@ -1,9 +1,7 @@
 /* Liste des images de la page */
 const image = document.querySelectorAll('div.listeTableau > img');
-
 /* La div de zoom d'image */
 const zoom  = document.getElementById('zoom');
-
 /* L'image en grand */
 const grandeIMG = document.getElementById('imgZoom');
 
@@ -11,7 +9,7 @@ const grandeIMG = document.getElementById('imgZoom');
 /* On ren visible la zone de zoom avec la photo concernée */
 image.forEach((elem) => {
     elem.addEventListener('click', (e) => {
-        grandeIMG.src = e.srcElement.currentSrc;
+        grandeIMG.src = e.target.currentSrc;
         zoom.style.visibility = "visible";
     });
 });

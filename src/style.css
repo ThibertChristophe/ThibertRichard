@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Goudy+Bookletter+1911&display=swap");
 
+/************************************* ALL *************************************/
 /** Reset des padding et margin */
 * {
   margin: 0;
@@ -9,43 +10,6 @@
   box-sizing: border-box;
 }
 
-/* Police */
-div {
-  font-family: "Caveat", cursive;
-}
-
-h1 {
-  margin-bottom: 10px;
-}
-/********************************************** MENU *************************************/
-.menuTop {
-  font-size: 1.6rem;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid;
-  border-color: white;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.6);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 4;
-}
-
-.menuFooter {
-  font-size: 1.6rem;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-bottom: 15px;
-  border-top: 1px solid;
-  border-color: white;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 4;
-}
-
-/************************************* ALL *************************************/
 section {
   font-family: "Caveat", cursive;
   font-size: 2rem;
@@ -76,9 +40,45 @@ body {
 }
 
 main {
-  /*background-color: aliceblue;*/
   min-height: 100%;
   margin: 40px 80px;
+}
+
+/* Police */
+div {
+  font-family: "Caveat", cursive;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+/********************************************** MENU *************************************/
+.menuTop {
+  font-size: 1.6rem;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
+  border-color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 4;
+}
+
+.menuFooter {
+  font-size: 1.6rem;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+  border-top: 1px solid;
+  border-color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 4;
 }
 
 /******************* ANCRER FOOTER *******************/
@@ -216,7 +216,6 @@ textarea {
 }
 
 /******************************************** EXPO **********************************/
-
 .coordonneeExpo {
   background-color: rgba(255, 255, 255, 0.575);
   border-radius: 10px;
@@ -271,6 +270,7 @@ textarea {
     margin-top: 10px;
   }
 }
+
 /******************************************** MEDIA QUERIES **********************************/
 /******************************************** 550 **********************************/
 @media all and (max-width: 550px) {
@@ -279,7 +279,6 @@ textarea {
   }
 
   main {
-    /*background-color: aliceblue;*/
     min-height: 100%;
     margin: 20px 40px;
   }
@@ -326,7 +325,6 @@ textarea {
 }
 
 /******************************************** ZOOM *****************************************/
-
 #zoom {
   position: fixed;
   left: 2.5%;
@@ -354,18 +352,3 @@ textarea {
   margin-top: 5px;
   font-size: 25px;
 }
-
-/* .close {
-  width: 40px;
-  height: 5px;
-  background-color: black;
-  position: absolute;
-} */
-
-/* .close:nth-child(1) {
-  transform: rotate(45deg);
-}
-.close:nth-child(2) {
-  transform: rotate(-45deg);
-}
- */
