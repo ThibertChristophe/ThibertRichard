@@ -341,7 +341,7 @@ textarea {
 
 #zoom img {
   position: absolute;
-  height: 90%;
+  max-height: 90%;
   width: auto;
   margin: 40px 10px;
   left: 50%;
