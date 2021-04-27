@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Goudy+Bookletter+1911&display=swap");
-
 /************************************* ALL *************************************/
 /** Reset des padding et margin */
 * {
@@ -222,7 +221,6 @@ textarea {
 }
 
 .coordonneeExpo img {
-  float: right;
   width: auto;
   height: 150px;
   border-radius: 10px;
