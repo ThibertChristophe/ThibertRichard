@@ -5,7 +5,7 @@
  */
 let input = 'belgium';
 let pays;
-const fetchHeure = async() => {
+const fetchPays = async() => {
     /* Recup de l'api */
     pays = await fetch('https://restcountries.eu/rest/v2/name/'+input)
     .then((reponse) => reponse.json())
