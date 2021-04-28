@@ -34,14 +34,15 @@ a:hover {
 body {
   background: url(../images/background.jpg) no-repeat fixed center/cover;
   height: 100vh;
-  min-height: 100%;
   position: relative;
   margin-top: 75px;
 }
 
 main {
   min-height: 100%;
-  margin: 40px 80px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -78,7 +79,6 @@ h1 {
 
 /******************* ANCRER FOOTER *******************/
 footer {
-  position: relative;
   bottom: 0;
   width: 100%;
 }
@@ -247,7 +247,7 @@ textarea {
 
   main {
     min-height: 100%;
-    margin: 30px 60px;
+    margin: 30px 20px;
   }
 }
 
@@ -272,7 +272,7 @@ textarea {
 
   main {
     min-height: 100%;
-    margin: 20px 40px;
+    margin: 20px 20px;
   }
 
   body {
