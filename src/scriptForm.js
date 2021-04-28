@@ -1,11 +1,12 @@
 "use strict";
 
 /* Click du bonton envoyer */
-let btnTest = document.getElementById('buttonForm');
-btnTest.onclick = function(){
-    alert('Message envoyé');
-    /*razForm();*/
-};
+const btnTest = document.getElementById('buttonForm');
+
+
+btnTest.addEventListener('click', () => {
+    alert("OK");
+});
 
 /* Remise à zéro/vide des champs du form*/
 function razForm(){
