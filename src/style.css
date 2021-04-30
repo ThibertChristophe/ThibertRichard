@@ -8,6 +8,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Caveat", cursive;
+  color: white;
 }
 
 section {
@@ -40,13 +41,19 @@ body {
 
 main {
   min-height: 100%;
-  margin-left: 80px;
-  margin-right: 80px;
-  margin-bottom: 20px;
 }
 
 h1 {
-  margin-bottom: 10px;
+  margin-top: 150px;
+  text-align: center;
+  font-size: 7rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.sousTitre {
+  text-align: center;
+  font-size: 5rem;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 /********************************************** MENU *************************************/
@@ -63,6 +70,7 @@ h1 {
   width: 100%;
   top: 0;
   z-index: 4;
+  border-bottom: 2px solid #c9ac0ad8;
 }
 
 .menuFooter {
@@ -75,6 +83,7 @@ h1 {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 4;
+  border-top: 2px solid #c9ac0ad8;
 }
 
 /******************* ANCRER FOOTER *******************/
@@ -110,17 +119,22 @@ footer {
 }
 
 .contentIndex {
-  background-color: rgba(255, 255, 255, 0.575);
-  border-radius: 10px;
-  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: 15%;
+  padding: 25px 25px;
+  border-top: 2px solid #c9ac0ad8;
+  text-align: center;
 }
 
 /*************************************** A PROPOS ***************************************/
 .aPropos {
   display: flex;
-  justify-content: center;
   flex-wrap: nowrap;
-  align-content: space-between;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  margin-top: 5%;
+  border-top: 2px solid #c9ac0ad8;
+  border-bottom: 2px solid #c9ac0ad8;
 }
 
 .aPropos img {
@@ -130,13 +144,6 @@ footer {
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.presentation {
-  background-color: rgba(255, 255, 255, 0.575);
-  border-radius: 10px;
-  padding: 15px;
-  margin-bottom: 10px;
 }
 
 /************************************** CONTACT *******************************************/
@@ -186,18 +193,20 @@ textarea {
 }
 
 .contact {
-  background-color: rgba(255, 255, 255, 0.575);
-  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 15px;
   text-align: center;
+  border-top: 2px solid #c9ac0ad8;
+  border-bottom: 2px solid #c9ac0ad8;
+  margin-top: 5%;
 }
 
 .contact a {
-  color: black;
+  color: white;
 }
 
 .contact a:hover {
-  color: white;
+  color: black;
 }
 
 .contact img {
@@ -212,10 +221,16 @@ textarea {
 
 /******************************************** EXPO **********************************/
 .coordonneeExpo {
-  background-color: rgba(255, 255, 255, 0.575);
-  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 15px;
   margin-bottom: 20px;
+  display: block;
+  border-top: 2px solid #c9ac0ad8;
+  border-bottom: 2px solid #c9ac0ad8;
+  margin-top: 5%;
+}
+
+.coordonneeExpo div {
   display: flex;
   justify-content: space-between;
 }
@@ -229,12 +244,12 @@ textarea {
 }
 
 .lienExpo {
-  color: black;
+  color: white;
   text-decoration: underline;
 }
 
 .lienExpo:hover {
-  color: white;
+  color: black;
 }
 
 /******************************************** MEDIA QUERIES **********************************/
