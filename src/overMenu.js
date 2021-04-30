@@ -11,7 +11,7 @@ window.onscroll = function() {
     if (yMenu > y) {
         menuT.style.top = "-58px";
     } else{
-    menuT.style.top = "0";
+        menuT.style.top = "0";
     }
 }
 
