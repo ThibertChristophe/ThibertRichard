@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Goudy+Bookletter+1911&display=swap");
+
 /************************************* ALL *************************************/
 /** Reset des padding et margin */
 * {
@@ -13,7 +14,7 @@
 
 section {
   font-family: "Caveat", cursive;
-  font-size: 2rem;
+  font-size: 2.2rem;
   height: 100%;
   position: relative;
 }
@@ -60,7 +61,7 @@ h1 {
 
 /********************************************** MENU *************************************/
 .menuTop {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 10px;
@@ -74,8 +75,18 @@ h1 {
   border-bottom: 2px solid #c9ac0ad8;
 }
 
+.lineOver {
+  width: 65px;
+  border-top: 5px solid red;
+  visibility: hidden;
+}
+
+.menuTop a:hover {
+  transition: 0.5s;
+}
+
 .menuFooter {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 15px;
@@ -97,7 +108,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 10px;
+  padding-top: 80px;
 }
 
 .photoAcceuil img,
@@ -111,7 +122,6 @@ footer {
   box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.6);
 }
 
-.photoAcceuil img:hover,
 .listeTableau img:hover {
   transform: scale(1.05);
   transition: 0.8s ease;
@@ -125,18 +135,21 @@ footer {
   text-align: center;
 }
 
-.photoAcceuil {
-  position: flex;
-}
-
 #tabIndex1 {
   -moz-transform: scale(0.8) rotate(-30deg);
   -webkit-transform: scale(0.8) rotate(-30deg);
   -o-transform: scale(0.8) rotate(-30deg);
   -ms-transform: scale(0.8) rotate(-30deg);
   transform: scale(0.8) rotate(-25deg);
+  transition: 1.5s;
   position: absolute;
   left: 30%;
+}
+
+#tabIndex1:hover {
+  left: 28%;
+  transition: 1.5s;
+  transition-duration: 1.5s;
 }
 
 #tabIndex2 {
@@ -145,9 +158,16 @@ footer {
   -o-transform: scale(0.8) rotate(15deg);
   -ms-transform: scale(0.8) rotate(15deg);
   transform: scale(0.8) rotate(30deg);
+  transition: 1.5s;
   position: absolute;
   left: 45%;
   z-index: 4;
+}
+
+#tabIndex2:hover {
+  left: 48%;
+  transition: 1.5s;
+  transition-duration: 1.5s;
 }
 
 #tabIndex3 {
@@ -262,18 +282,14 @@ textarea {
   border-top: 2px solid #c9ac0ad8;
   border-bottom: 2px solid #c9ac0ad8;
   margin-top: 5%;
-}
-
-.coordonneeExpo div {
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
 }
 
 .coordonneeExpo img {
   width: auto;
   height: 150px;
   border-radius: 10px;
-  margin-top: auto;
+  margin-top: 10px;
   margin-bottom: auto;
 }
 
