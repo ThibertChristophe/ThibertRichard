@@ -51,12 +51,14 @@ h1 {
   text-align: center;
   font-size: 7rem;
   color: rgba(0, 0, 0, 0.8);
+  cursor: default;
 }
 
 .sousTitre {
   text-align: center;
   font-size: 5rem;
   color: rgba(0, 0, 0, 0.8);
+  cursor: default;
 }
 
 /********************************************** MENU *************************************/
@@ -125,6 +127,7 @@ footer {
 .listeTableau img:hover {
   transform: scale(1.05);
   transition: 0.8s ease;
+  cursor: pointer;
 }
 
 .contentIndex {
@@ -133,13 +136,14 @@ footer {
   padding: 25px 25px;
   border-top: 2px solid #c9ac0ad8;
   text-align: center;
+  cursor: default;
 }
 
 #tabIndex1 {
-  -moz-transform: scale(0.8) rotate(-30deg);
-  -webkit-transform: scale(0.8) rotate(-30deg);
-  -o-transform: scale(0.8) rotate(-30deg);
-  -ms-transform: scale(0.8) rotate(-30deg);
+  -moz-transform: scale(0.8) rotate(-25deg);
+  -webkit-transform: scale(0.8) rotate(-25deg);
+  -o-transform: scale(0.8) rotate(-25deg);
+  -ms-transform: scale(0.8) rotate(-25deg);
   transform: scale(0.8) rotate(-25deg);
   transition: 1.5s;
   position: absolute;
@@ -153,10 +157,10 @@ footer {
 }
 
 #tabIndex2 {
-  -moz-transform: scale(0.8) rotate(15deg);
-  -webkit-transform: scale(0.8) rotate(15deg);
-  -o-transform: scale(0.8) rotate(15deg);
-  -ms-transform: scale(0.8) rotate(15deg);
+  -moz-transform: scale(0.8) rotate(30deg);
+  -webkit-transform: scale(0.8) rotate(30deg);
+  -o-transform: scale(0.8) rotate(30deg);
+  -ms-transform: scale(0.8) rotate(30deg);
   transform: scale(0.8) rotate(30deg);
   transition: 1.5s;
   position: absolute;
@@ -171,10 +175,10 @@ footer {
 }
 
 #tabIndex3 {
-  -moz-transform: scale(0.8) rotate(30deg);
-  -webkit-transform: scale(0.8) rotate(30deg);
-  -o-transform: scale(0.8) rotate(30deg);
-  -ms-transform: scale(0.8) rotate(30deg);
+  -moz-transform: scale(0.8) rotate(10deg);
+  -webkit-transform: scale(0.8) rotate(10deg);
+  -o-transform: scale(0.8) rotate(10deg);
+  -ms-transform: scale(0.8) rotate(10deg);
   transform: scale(0.8) rotate(10deg);
   z-index: 5;
 }
@@ -188,6 +192,7 @@ footer {
   margin-top: 5%;
   border-top: 2px solid #c9ac0ad8;
   border-bottom: 2px solid #c9ac0ad8;
+  cursor: default;
 }
 
 .aPropos img {
@@ -252,6 +257,7 @@ textarea {
   border-top: 2px solid #c9ac0ad8;
   border-bottom: 2px solid #c9ac0ad8;
   margin-top: 5%;
+  cursor: default;
 }
 
 .contact a {
@@ -467,6 +473,7 @@ textarea {
   margin: 40px 10px;
   left: 50%;
   transform: translateX(-50%);
+  cursor: pointer;
 }
 
 #zoom p {
