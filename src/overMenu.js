@@ -6,7 +6,7 @@
 let menuT = document.getElementById('menuTop');
 const yMenu = 57;
 
-window.onscroll = function() {
+window.addEventListener('scroll', () => {
     const containt = document.getElementsByClassName('contentIndex');
     let y = containt[0].getBoundingClientRect().y;
     if (yMenu > y) {
@@ -14,5 +14,5 @@ window.onscroll = function() {
     } else{
         menuT.style.top = "0";
     }
-}
+});
 
