@@ -50,19 +50,19 @@ h1 {
   margin-top: 10%;
   text-align: center;
   font-size: 7rem;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.9);
   cursor: default;
 }
 
 .sousTitre {
   text-align: center;
   font-size: 5rem;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.9);
   cursor: default;
 }
 
 /********************************************** MENU *************************************/
-.menuTop {
+#menuTop {
   font-size: 1.8rem;
   padding-top: 10px;
   padding-left: 10px;
@@ -75,6 +75,7 @@ h1 {
   top: 0;
   z-index: 4;
   border-bottom: 2px solid #c9ac0ad8;
+  transition: top 0.3s;
 }
 
 .lineOver {
@@ -111,6 +112,10 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 80px;
+}
+
+.photoAcceuil {
+  position: relative;
 }
 
 .photoAcceuil img,
