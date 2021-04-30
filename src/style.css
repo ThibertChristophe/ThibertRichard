@@ -14,6 +14,8 @@
 section {
   font-family: "Caveat", cursive;
   font-size: 2rem;
+  height: 100%;
+  position: relative;
 }
 
 li {
@@ -44,7 +46,7 @@ main {
 }
 
 h1 {
-  margin-top: 150px;
+  margin-top: 10%;
   text-align: center;
   font-size: 7rem;
   color: rgba(0, 0, 0, 0.8);
@@ -63,7 +65,6 @@ h1 {
   padding-left: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid;
-  border-color: white;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.6);
   position: fixed;
@@ -79,7 +80,6 @@ h1 {
   padding-left: 10px;
   padding-bottom: 15px;
   border-top: 1px solid;
-  border-color: white;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 4;
@@ -93,7 +93,6 @@ footer {
 }
 
 /********************************************* INDEX / TABLEAUX **********************************************/
-.photoAcceuil,
 .listeTableau {
   display: flex;
   flex-wrap: wrap;
@@ -120,10 +119,44 @@ footer {
 
 .contentIndex {
   background-color: rgba(0, 0, 0, 0.7);
-  margin-top: 15%;
+  margin-top: 12%;
   padding: 25px 25px;
   border-top: 2px solid #c9ac0ad8;
   text-align: center;
+}
+
+.photoAcceuil {
+  position: flex;
+}
+
+#tabIndex1 {
+  -moz-transform: scale(0.8) rotate(-30deg);
+  -webkit-transform: scale(0.8) rotate(-30deg);
+  -o-transform: scale(0.8) rotate(-30deg);
+  -ms-transform: scale(0.8) rotate(-30deg);
+  transform: scale(0.8) rotate(-25deg);
+  position: absolute;
+  left: 30%;
+}
+
+#tabIndex2 {
+  -moz-transform: scale(0.8) rotate(15deg);
+  -webkit-transform: scale(0.8) rotate(15deg);
+  -o-transform: scale(0.8) rotate(15deg);
+  -ms-transform: scale(0.8) rotate(15deg);
+  transform: scale(0.8) rotate(30deg);
+  position: absolute;
+  left: 45%;
+  z-index: 4;
+}
+
+#tabIndex3 {
+  -moz-transform: scale(0.8) rotate(30deg);
+  -webkit-transform: scale(0.8) rotate(30deg);
+  -o-transform: scale(0.8) rotate(30deg);
+  -ms-transform: scale(0.8) rotate(30deg);
+  transform: scale(0.8) rotate(10deg);
+  z-index: 5;
 }
 
 /*************************************** A PROPOS ***************************************/
@@ -213,6 +246,7 @@ textarea {
   height: 500px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
+  margin-top: 10px;
 }
 
 .contact p {
@@ -253,16 +287,36 @@ textarea {
 }
 
 /******************************************** MEDIA QUERIES **********************************/
-/******************************************** 1200 **********************************/
-@media all and (max-width: 1200px) {
+/******************************************** 1280 **********************************/
+@media all and (max-width: 1280px) {
   .aPropos img {
     width: 300px;
     height: 300px;
   }
 
+  body {
+    height: 100vh;
+  }
+
   main {
     min-height: 100%;
-    margin: 30px 20px;
+  }
+
+  section {
+    height: auto;
+    position: relative;
+    overflow: auto;
+  }
+
+  .contentIndex {
+    min-height: 100%;
+  }
+
+  #tabIndex1,
+  #tabIndex2,
+  #tabIndex3 {
+    width: 300px;
+    height: 300px;
   }
 }
 
@@ -276,6 +330,23 @@ textarea {
   .coordonneeExpo img {
     margin-top: 10px;
   }
+
+  section {
+    height: auto;
+    position: relative;
+    overflow: auto;
+  }
+
+  #tabIndex1,
+  #tabIndex2,
+  #tabIndex3 {
+    width: 200px;
+    height: 200px;
+  }
+
+  #tabIndex2 {
+    left: 40%;
+  }
 }
 
 /******************************************** MEDIA QUERIES **********************************/
@@ -287,7 +358,6 @@ textarea {
 
   main {
     min-height: 100%;
-    margin: 20px 20px;
   }
 
   body {
@@ -298,6 +368,16 @@ textarea {
     position: relative;
     bottom: 0;
     width: 100%;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  section {
+    height: auto;
+    position: relative;
+    overflow: auto;
   }
 
   .photoAcceuil img,
@@ -329,9 +409,25 @@ textarea {
   .contact img {
     height: 200px;
   }
+
+  .coordonneeExpo img {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  #tabIndex1,
+  #tabIndex2,
+  #tabIndex3 {
+    width: 200px;
+    height: 200px;
+  }
+
+  #tabIndex2 {
+    left: 25%;
+  }
 }
 
-/******************************************** ZOOM *****************************************/
+/******************************************** DIV ZOOM *****************************************/
 #zoom {
   position: fixed;
   left: 2.5%;
