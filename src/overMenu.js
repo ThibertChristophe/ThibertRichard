@@ -15,9 +15,9 @@ window.addEventListener('scroll', () => {
     let y = containt[0].getBoundingClientRect().y;
     if (yMenu > y) {
         menuT.style.top = "-58px";
-      //  fleche.style.visibility = 'visible';
-    } else{
+        fleche.style.visibility = 'visible';
+    } else {
         menuT.style.top = "0";
-       // fleche.style.visibility = 'hidden';
+        fleche.style.visibility = 'hidden';
     }
 });
