@@ -14,12 +14,12 @@ const fetchPays = async() => {
         /* Accès direct */
         console.log("Pays 1 : "+data[0].name);
         console.log("Population 1 : "+data[0].population);
-        /* Accès forEach */
-        data.forEach((item) => {
+        /* Accès forEach ou .map */
+        data.map((item) => {
             console.log("Pays 2 : "+item.name);
             console.log("Population 2 : "+item.population);
         })
     })
 }
 
-/* fetchHeure(); */
+/* fetchPays();*/
