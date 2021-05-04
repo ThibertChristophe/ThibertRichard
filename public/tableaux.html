@@ -5,13 +5,16 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thibert Richard</title>
-    <meta name="description" content="Page de contact de Thibert Richard" />
+    <meta
+      name="description"
+      content="Liste des oeuvres de peinture de Thibert Richard"
+    />
     <meta property="og:type" content="website" />
     <meta
       property="og:description"
-      content="Page de contact de Thibert Richard"
+      content="Liste des oeuvres de peinture de Thibert Richard"
     />
-    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="./src/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -45,22 +48,21 @@
     <!-- Corps -->
     <main>
       <section class="animate__animated animate__fadeIn">
-        <h1>Contact</h1>
-        <div class="contact containt">
-          Vous pouvez prendre contact avec moi au (+32)472/21.22.35
-          <p>
-            Ou par email à
-            <a
-              href="mailto:artistethibert@skynet.be"
-              style="text-decoration: underline"
-            >
-              artistethibert@skynet.be
-            </a>
-          </p>
-          <img
-            src="../photos/atelierContact.jpg"
-            alt="Photo d'une partie de l'atelier de Thibert Richard"
-          />
+        <h1>Oeuvres</h1>
+        <div class="listeTableau animate__animated animate__fadeIn containt">
+          <img src="./photos/tableauListe1.jpg" alt="Tableau 1" />
+          <img src="./photos/tableauListe2.jpg" alt="Tableau 2" />
+          <img src="./photos/tableauListe3.jpg" alt="Tableau 3" />
+          <img src="./photos/tableauListe4.jpg" alt="Tableau 4" />
+          <img src="./photos/tableauListe5.jpg" alt="Tableau 5" />
+          <img src="./photos/tableauListe6.jpg" alt="Tableau 6" />
+          <img src="./photos/tableauListe7.jpg" alt="Tableau 7" />
+          <img src="./photos/tableauListe8.jpg" alt="Tableau 8" />
+          <img src="./photos/tableauListe9.jpg" alt="Tableau 9" />
+        </div>
+        <div id="zoom">
+          <img src="" alt="Tableau zoom" id="imgZoom" />
+          <p>Cliquez sur l'image pour fermer</p>
         </div>
       </section>
     </main>
@@ -79,4 +81,5 @@
     <button id="fleche">▲</button>
   </body>
   <script src="./src/overMenu.js"></script>
+  <script src="./src/scriptPhoto.js"></script>
 </html>
