@@ -28,7 +28,7 @@ html {
   text-align: center;
   font-size: 25px;
   visibility: hidden;
-  border: solid 2px black;
+  border: solid 2px rgba(0, 0, 0, 0.192);
   border-radius: 9em;
   cursor: pointer;
   transition: 0.5s;
