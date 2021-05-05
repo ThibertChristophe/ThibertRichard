@@ -1,0 +1,24 @@
+{
+  "name": "richardthibert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "sass": "^1.32.12"
+  },
+  "scripts": {
+    "scss": "node-sass --watch stylescss -o styles"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThibertChristophe/ThibertRichard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThibertChristophe/ThibertRichard/issues"
+  },
+  "homepage": "https://github.com/ThibertChristophe/ThibertRichard#readme"
+}
