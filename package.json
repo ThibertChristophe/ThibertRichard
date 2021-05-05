@@ -8,7 +8,7 @@
     "sass": "^1.32.12"
   },
   "scripts": {
-    "scss": "node-sass --watch stylescss -o styles"
+    "scss": "sass --watch ./public/styles/style.scss:./public/styles/style.css"
   },
   "devDependencies": {},
   "repository": {

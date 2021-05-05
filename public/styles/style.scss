@@ -32,13 +32,11 @@ html {
   border-radius: 9em;
   cursor: pointer;
   transition: 0.5s;
+  &:hover {
+    bottom: 18px;
+    transition: 0.5s;
+  }
 }
-
-#fleche:hover {
-  bottom: 18px;
-  transition: 0.5s;
-}
-
 section {
   font-family: "Caveat", cursive;
   font-size: 2rem;
@@ -55,13 +53,10 @@ li {
 a {
   text-decoration: none;
   color: white;
+  &:hover {
+    color: black;
+  }
 }
-
-/* mouse over */
-a:hover {
-  color: black;
-}
-
 body {
   background: url(../images/background.jpg) no-repeat fixed center/cover;
   height: 100vh;
@@ -103,16 +98,15 @@ h1 {
   z-index: 4;
   border-bottom: 2px solid #c9ac0ad8;
   transition: top 0.3s;
+  a:hover {
+    transition: 0.5s;
+  }
 }
 
 .lineOver {
   width: 65px;
   border-top: 5px solid red;
   visibility: hidden;
-}
-
-.menuTop a:hover {
-  transition: 0.5s;
 }
 
 .menuFooter {
@@ -125,6 +119,9 @@ h1 {
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 4;
   border-top: 2px solid #c9ac0ad8;
+  a:hover {
+    transition: 0.5s;
+  }
 }
 
 /******************* ANCRER FOOTER *******************/
@@ -139,27 +136,33 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 80px;
+  img {
+    margin-right: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.6);
+    &:hover {
+      transform: scale(1.05);
+      transition: 0.8s ease;
+      cursor: pointer;
+    }
+  }
 }
 
 .photoAcceuil {
   position: relative;
-}
-
-.photoAcceuil img,
-.listeTableau img {
-  margin-right: 20px;
-  margin-bottom: 40px;
-  margin-left: 20px;
-  width: 400px;
-  height: 400px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.6);
-}
-
-.listeTableau img:hover {
-  transform: scale(1.05);
-  transition: 0.8s ease;
-  cursor: pointer;
+  img {
+    margin-right: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.6);
+  }
 }
 
 .contentIndex {
@@ -180,12 +183,11 @@ footer {
   transition: 1.5s;
   position: absolute;
   left: 30%;
-}
-
-#tabIndex1:hover {
-  left: 28%;
-  transition: 1.5s;
-  transition-duration: 1.5s;
+  &:hover {
+    left: 28%;
+    transition: 1.5s;
+    transition-duration: 1.5s;
+  }
 }
 
 #tabIndex2 {
@@ -198,12 +200,11 @@ footer {
   position: absolute;
   left: 45%;
   z-index: 4;
-}
-
-#tabIndex2:hover {
-  left: 48%;
-  transition: 1.5s;
-  transition-duration: 1.5s;
+  &:hover {
+    left: 48%;
+    transition: 1.5s;
+    transition-duration: 1.5s;
+  }
 }
 
 #tabIndex3 {
@@ -227,13 +228,12 @@ footer {
   cursor: default;
   align-items: center;
   justify-content: center;
-}
-
-.aPropos img {
-  width: 500px;
-  margin-left: 50px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
+  img {
+    width: 500px;
+    margin-left: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
+  }
 }
 
 /************************************** CONTACT *******************************************/
@@ -270,11 +270,10 @@ textarea {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-}
-
-#buttonForm:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+  }
 }
 
 #message {
@@ -290,26 +289,25 @@ textarea {
   border-bottom: 2px solid #c9ac0ad8;
   margin-top: 5%;
   cursor: default;
-}
 
-.contact a {
-  color: white;
-}
+  a {
+    color: white;
+    &:hover {
+      color: black;
+    }
+  }
 
-.contact a:hover {
-  color: black;
-}
+  img {
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
-.contact img {
-  height: 500px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.contact p {
-  margin-bottom: 10px;
+  p {
+    margin-bottom: 10px;
+  }
 }
 
 /******************************************** EXPO ****************************************/
@@ -322,21 +320,21 @@ textarea {
   border-bottom: 2px solid #c9ac0ad8;
   margin-top: 5%;
   text-align: center;
-}
-
-.coordonneeExpo img {
-  height: 150px;
-  border-radius: 10px;
-  margin-top: 10px;
-}
-
-.lienExpo {
-  color: white;
-  text-decoration: underline;
-}
-
-.lienExpo:hover {
-  color: black;
+  img {
+    height: 150px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  .lienExpo {
+    color: white;
+    text-decoration: underline;
+    &:hover {
+      color: black;
+    }
+  }
+  .expoCard {
+    margin-bottom: 20px;
+  }
 }
 
 /******************************************** MEDIA QUERIES ***********************************/
@@ -383,10 +381,9 @@ textarea {
 
   .coordonneeExpo {
     flex-wrap: wrap;
-  }
-
-  .coordonneeExpo img {
-    margin-top: 10px;
+    img {
+      margin-top: 10px;
+    }
   }
 
   section {
@@ -444,13 +441,12 @@ textarea {
     height: 200px;
   }
 
-  .presentation p {
-    margin-right: 20px;
-  }
-
   .presentation {
     width: 100%;
     margin-right: 0;
+    p {
+      margin-right: 20px;
+    }
   }
 
   .aPropos img {
@@ -462,10 +458,9 @@ textarea {
   .contact {
     text-align: center;
     margin-top: 10px;
-  }
-
-  .contact img {
-    height: 200px;
+    img {
+      height: 200px;
+    }
   }
 
   .coordonneeExpo img {
@@ -498,21 +493,19 @@ textarea {
   margin-right: auto;
   text-align: center;
   border-radius: 10px;
-}
-
-#zoom img {
-  position: absolute;
-  max-height: 90%;
-  width: auto;
-  max-width: 90%;
-  margin: 40px 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  cursor: pointer;
-}
-
-#zoom p {
-  margin-top: 5px;
-  font-size: 25px;
-  color: black;
+  img {
+    position: absolute;
+    max-height: 90%;
+    width: auto;
+    max-width: 90%;
+    margin: 40px 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+  p {
+    margin-top: 5px;
+    font-size: 25px;
+    color: black;
+  }
 }
